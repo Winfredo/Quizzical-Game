@@ -11,16 +11,23 @@ const Questionspage = () => {
     return answers.sort(() => Math.random() - 0.5);
   }
 
+   function decodeHtml(html) {
+    const txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+  }
+
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple"
+          "https://opentdb.com/api.php?amount=5&category=17&difficulty=medium&type=multiple"
         );
-        if (!res.ok) {
-          throw new Error("Failed to fetch questions");
-        }
+       if (!res.ok) {
+        setError("Failed to fetch questions");
+        return;
+      }
         const data = await res.json();
         console.log(data);
         setQuestions(data.results);
@@ -41,11 +48,11 @@ const Questionspage = () => {
       <div>
         {questions.map((question, index) => (
           <div key={index} className="questions-container">
-            <p>{question.question}</p>
+            <p className="question">{decodeHtml(question.question)}</p>
             <div className="answers-container">
               {getAnswers(question).map((answer, answerIndex) => (
                 <p className="answer" key={answerIndex}>
-                  <button>{answer}</button>
+                  <button className="answer-button">{decodeHtml(answer)}</button>
                 </p>
               ))}
             </div>

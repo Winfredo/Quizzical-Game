@@ -94,3 +94,18 @@ border-bottom: 2px solid #DBDEF0;
 .answer{
   margin: 0;
 }
+
+.answer-button{
+  border: 1px solid #4D5B9E;
+  background-color: white;
+  color: #293264;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+.question{
+  color: #293264;
+  font-weight: 600;
+  text-align: left;
+}
