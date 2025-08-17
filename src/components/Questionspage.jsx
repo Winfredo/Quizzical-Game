@@ -22,7 +22,7 @@ const Questionspage = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "https://opentdb.com/api.php?amount=5&category=17&difficulty=medium&type=multiple"
+          "https://opentdb.com/api.php?amount=5&category=9&difficulty=medium&type=multiple"
         );
         console.log("Res status",res.status);
         if (!res.ok) {
