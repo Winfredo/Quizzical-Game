@@ -24,10 +24,11 @@ const Questionspage = () => {
         const res = await fetch(
           "https://opentdb.com/api.php?amount=5&category=17&difficulty=medium&type=multiple"
         );
-       if (!res.ok) {
-        setError("Failed to fetch questions");
-        return;
-      }
+        console.log("Res status",res.status);
+        if (!res.ok) {
+         setError("Failed to fetch questions");
+         return;
+       }
         const data = await res.json();
         console.log(data);
         setQuestions(data.results);
