@@ -124,8 +124,8 @@ const Questionspage = () => {
               Check Answers
             </button>
           ) : (
-            <div>
-              <p>
+            <div className="quiz-results-footer">
+              <p className="score-display-el">
                 You scored {score}/{questions.length} correct answers
               </p>
               <button onClick={playAgain} className="play-again-btn">

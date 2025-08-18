@@ -136,9 +136,20 @@ body::after {
 .play-again-btn {
   background-color: #4d5b9e;
   color: white;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
   margin: 0;
+}
+
+.quiz-results-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.score-display-el{
+  font-weight: 700;
 }
