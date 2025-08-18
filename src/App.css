@@ -14,7 +14,7 @@ body {
   height: 100vh;
   text-align: center;
   overflow: hidden;
-  position: relative; 
+  position: relative;
   background-color: #f5f7fb;
 }
 
@@ -68,16 +68,16 @@ body::after {
   font-weight: 700;
 }
 
-.questions-container{
+.questions-container {
   width: 80vw;
   height: 14vh;
   display: flex;
   flex-direction: column;
-border-bottom: 2px solid #DBDEF0;
+  border-bottom: 2px solid #dbdef0;
 }
 
-.check-answers-button{
-  background-color: #4D5B9E;
+.check-answers-button {
+  background-color: #4d5b9e;
   border: none;
   margin-top: 20px;
   color: white;
@@ -85,16 +85,16 @@ border-bottom: 2px solid #DBDEF0;
   border-radius: 20px;
 }
 
-.answers-container{
+.answers-container {
   display: flex;
   gap: 20px;
 }
 
-.question{
+.question {
   text-align: left;
 }
 
-.answer{
+.answer {
   margin: 0;
 }
 
@@ -108,15 +108,15 @@ border-bottom: 2px solid #DBDEF0;
 }
 
 .answer-button.selected {
-  background: #cfd8ff; 
+  background: #cfd8ff;
 }
 
 .answer-button.correct {
-  background: #90ee90; 
+  background: #90ee90;
 }
 
 .answer-button.wrong {
-  background: #ff7f7f; 
+  background: #ff7f7f;
 }
 
 .check-answers-button,
@@ -133,7 +133,7 @@ border-bottom: 2px solid #DBDEF0;
   cursor: not-allowed;
 }
 
-.play-again-btn{
+.play-again-btn {
   background-color: #4d5b9e;
   color: white;
   padding: 10px 20px;

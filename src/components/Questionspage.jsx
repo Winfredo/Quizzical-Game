@@ -5,7 +5,7 @@ const Questionspage = () => {
   const [questions, setQuestions] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
-const [selectedAnswers, setSelectedAnswers] = useState({});
+  const [selectedAnswers, setSelectedAnswers] = useState({});
   const [showResults, setShowResults] = useState(false);
 
   function decodeHtml(html) {
@@ -95,7 +95,7 @@ const [selectedAnswers, setSelectedAnswers] = useState({});
                     className += " wrong";
                   }
                 } else if (isSelected) {
-                  className += " selected"; 
+                  className += " selected";
                 }
 
                 return (
@@ -118,7 +118,7 @@ const [selectedAnswers, setSelectedAnswers] = useState({});
           {!showResults ? (
             <button
               onClick={checkAnswers}
-              disabled={!allAnswered} 
+              disabled={!allAnswered}
               className="check-answers-button"
             >
               Check Answers
