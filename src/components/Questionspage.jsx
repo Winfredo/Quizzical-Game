@@ -5,6 +5,7 @@ const Questionspage = () => {
   const [questions, setQuestions] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [answers, setAnswers] = useState([]);
 
   function getAnswers(question) {
     const answers = [...question.incorrect_answers, question.correct_answer];
