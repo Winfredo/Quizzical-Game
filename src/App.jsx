@@ -26,6 +26,3 @@ const App = () => {
 }
 
 export default App
-
-
-//clicking the button should show the questionspage

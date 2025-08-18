@@ -35,7 +35,6 @@ body::before {
   background-color: #fffad1;
 }
 
-/* bottom-left blob */
 body::after {
   width: 25vw;
   height: 25vw;
@@ -91,21 +90,55 @@ border-bottom: 2px solid #DBDEF0;
   gap: 20px;
 }
 
+.question{
+  text-align: left;
+}
+
 .answer{
   margin: 0;
 }
 
-.answer-button{
-  border: 1px solid #4D5B9E;
-  background-color: white;
-  color: #293264;
-  border-radius: 7px;
-  padding: 5px 10px;
-  font-weight: 600;
+.answer-button {
+  border: 1px solid #333;
+  background: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  margin: 4px;
+  cursor: pointer;
 }
 
-.question{
-  color: #293264;
-  font-weight: 600;
-  text-align: left;
+.answer-button.selected {
+  background: #cfd8ff; 
+}
+
+.answer-button.correct {
+  background: #90ee90; 
+}
+
+.answer-button.wrong {
+  background: #ff7f7f; 
+}
+
+.check-answers-button,
+.play-again-btn {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.check-answers-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.play-again-btn{
+  background-color: #4d5b9e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin: 0;
 }
