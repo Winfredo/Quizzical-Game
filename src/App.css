@@ -1,5 +1,5 @@
 * {
-  background-color: #f5f7fb;
+  background-color: #d0d5e0;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -15,7 +15,6 @@ body {
   text-align: center;
   overflow: hidden;
   position: relative;
-  background-color: #f5f7fb;
 }
 
 body::before,
@@ -73,7 +72,7 @@ body::after {
   height: 14vh;
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid #dbdef0;
+  border-bottom: 2px solid #f0f2f8;
 }
 
 .check-answers-button {
